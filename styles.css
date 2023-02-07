@@ -1,6 +1,7 @@
 /* General */
 section{
-    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+
 }
 
 .seccion-oscura{
@@ -10,6 +11,10 @@ section{
 .seccion-clara{
     color: #072739;
 }
+.seccion-naranja {
+    background-color: #ffbd59;
+} 
+
 
 .seccion-titulo{
     font-size: 2rem;
@@ -27,24 +32,48 @@ section{
     justify-content: center;
 }
 
-/* Navegador */
-.navbar{
-    background-color: #ffbd59;
-    padding: 3rem;
-    font-size: 1.5rem;
-    font-family: 'Rozha One', serif
-    
+/* Contacto */
+.seccion-contacto{
+    color: #072739;
+    font-family: 'Rozha One', serif;
+    font-size: 1.2rem;
 }
-.navbar-collapse{
+.contacto .container {
+    max-width: 1000px;
+    min-height: 100px;
+    padding: 1px;
+}
+.contacto .row{
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+}
+.contacto button{
+    color: #072739;
+    font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 15%;
+    padding: 1rem 2em;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+    background-color:#072739;
+    color:#ffbd59;
+}
+.contacto button i{
+    color: #072739;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+    color:#ffbd59;
 }
 
 /* Seccion Hero */
 .hero{
     background-color: #2e3e46;
-    min-height: 450px;
-    text-align: center;
+    min-height: 350px;
     flex-direction: column;
     justify-content:space-between;
     margin-top: 10vh;
@@ -53,39 +82,26 @@ section{
 }
 .hero-principal{
     padding: 3rem;
+    
 }
-.hero-imagen{
-    width: 350px;
-    margin: 20px;
-
+.hero .row{
+display: flex;
+    flex-direction: row-reverse
 }
 
-.titulo{
-    margin: 5vh;
-    font-size: 2.5rem;
+.izquierda .contenedor{
+    margin: 7vh;
     color: #ffbd59;
+}
+.titulo{
+    font-size: 2.5rem;
     font-family: 'Rozha One', serif;
-}
-
-/* Perfil */
-.perfil{
-    height: 350px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.perfil .contenedor{
-    max-width: 600px;
-    text-align: center;
 }
 
 /* Experiencia */
 .experiencia{
     padding: 40px 40px 60px 40px;
 }
-
 .experiencia-titulo{
     font-size: 25px;
     font-weight: bold;
@@ -108,35 +124,33 @@ section{
 }
 
 /* Educacion */
-.educacion{
-    height: 300px;
-    padding: 10px;
+.formacion-academica{
+    padding: 40px 40px 60px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.educacion .contenedor{
+.formacion-academica .contenedor{
     max-width: 600px;
     text-align: center;
 }
 
-/* Idioma */
-.idioma{
-    height: 300px;
-    padding: 10px;
+.formacion-academica .titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
-.idioma .contenedor{
-    max-width: 600px;
-    text-align: center;
+.formacion-academica .columna{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-/* Responsive */
-@media screen and (max-width:767px){
-.navbar-brand{
-    display:none;
-}
+
+/* Idioma */
+.formacion-academica p{
+    display: flex;
 }
